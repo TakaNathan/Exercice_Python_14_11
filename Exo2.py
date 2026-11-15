@@ -15,26 +15,8 @@ def somme_matrice(A,B) :
     return C
 
 #Programme principal
-matrice_1 = []
-matrice_2 = []
-
-m = int(input("Nombre de rangees des matrices: "))
-n = int(input("Nombre de colonnes des matrices: "))
-print("Premiere Matrice")
-for i in range(m) :
-    list = []
-    for j in range(n) :
-        nb = int(input("Matrice1["+str(i)+","+str(j)+"] : "))
-        list.append(nb)
-    matrice_1.append(list) 
-
-print("Deuxieme matrice Matrice")
-for i in range(m) :
-    list = []
-    for j in range(n) :
-        nb = int(input("Matrice2["+str(i)+","+str(j)+"] : "))
-        list.append(nb)
-    matrice_2.append(list) 
+matrice_1 = [[1,2],[3,4]]
+matrice_2 = [[1,1],[1,1]]
 
 Somme = somme_matrice(matrice_1,matrice_2)
 
